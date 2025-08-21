@@ -17,11 +17,6 @@ function HomePage() {
               Find your van
             </div>
           </div>
-          <div className="bg-gray-900 w-full h-32 place-self-center">
-            <footer className="p-14 mt-24 text-center text-gray-500">
-              &copy; 2022#VANLIFE
-            </footer>
-          </div>
         </div>
       </div>
     </>

@@ -5,6 +5,7 @@ import thirdCar from "../assets/thirdCar.jpg";
 import fourthCar from "../assets/fourthCar.png";
 import fifthCar from "../assets/fifthCar.png";
 import sixthCar from "../assets/sixthCar.png";
+import { Link } from "react-router-dom";
 
 function Vans() {
   return (
@@ -19,22 +20,117 @@ function Vans() {
           <h1 className=" underline">Clear filters</h1>
         </div>
       </header>
-      <div className="flex gap-3">
+      <div className="flex gap-3  ">
         <div>
-          <img src={FirstWhiteCar} alt="van" />
-          <img src={secondCar} alt="van" />
-          <img src={thirdCar} alt="van" />
+          <Link to={`/Vans/1`}>
+            <div id="1">
+              <img className="size-96" id="1" src={FirstWhiteCar} alt="van" />
+              <div>
+                <div className="flex justify-between p-4">
+                  <h1>Most explorer</h1>
+                  <h1>
+                    $60 <br />
+                    /day
+                  </h1>
+                </div>
+                <button className="pl-4 pr-4 pt-1 pb-1 bg-[#FFEAD0]">
+                  Simple
+                </button>
+              </div>
+            </div>
+          </Link>
+
+          <Link to={`/Vans/2`}>
+            <div id="2" className="mt-8">
+              <img className="size-96" id="2" src={secondCar} alt="van" />
+              <div>
+                <div className="flex justify-between p-4">
+                  <h1>Most explorer</h1>
+                  <h1>
+                    $60 <br />
+                    /day
+                  </h1>
+                </div>
+                <button className="pl-4 pr-4 pt-1 pb-1 bg-[#FFEAD0]">
+                  Simple
+                </button>
+              </div>
+            </div>
+          </Link>
+          <Link to={`/Vans/3`}>
+            <div id="3" className="mt-8">
+              <img className="size-96" id="3" src={thirdCar} alt="van" />
+              <div>
+                <div className="flex justify-between p-4">
+                  <h1>Most explorer</h1>
+                  <h1>
+                    $60 <br />
+                    /day
+                  </h1>
+                </div>
+                <button className="pl-4 pr-4 pt-1 pb-1 bg-[#FFEAD0]">
+                  Simple
+                </button>
+              </div>
+            </div>
+          </Link>
         </div>
+
         <div>
-          <img src={fourthCar} alt="van" />
-          <img src={fifthCar} alt="van" />
-          <img src={sixthCar} alt="van" />
+          <Link to={`/Vans/4`}>
+            <div id="4">
+              <img className="size-96 " id="4" src={fourthCar} alt="van" />
+              <div>
+                <div className="flex justify-between p-4">
+                  <h1>Most explorer</h1>
+                  <h1>
+                    $60 <br />
+                    /day
+                  </h1>
+                </div>
+                <button className="pl-4 pr-4 pt-1 pb-1 bg-[#FFEAD0]">
+                  Simple
+                </button>
+              </div>
+            </div>
+          </Link>
+          <Link to={`/Vans/5`}>
+            <div id="5" className="mt-8">
+              {" "}
+              <img className="size-96" id="5" src={fifthCar} alt="van" />
+              <div>
+                <div className="flex justify-between p-4">
+                  <h1>Most explorer</h1>
+                  <h1>
+                    $$60 <br /> /day
+                  </h1>
+                </div>
+                <button className="pl-4 pr-4 pt-1 pb-1 bg-[#FFEAD0]">
+                  Simple
+                </button>
+              </div>
+            </div>
+          </Link>
+
+          <Link to={`/Vans/6`}>
+            <div id="6" className="mt-8">
+              {" "}
+              <img className="size-96" id="6" src={sixthCar} alt="van" />
+              <div>
+                <div className="flex justify-between p-4">
+                  <h1>Most explorer</h1>
+                  <h1>
+                    $60 <br />
+                    /day
+                  </h1>
+                </div>
+                <button className="pl-4 pr-4 pt-1 pb-1 bg-[#FFEAD0]">
+                  Simple
+                </button>
+              </div>
+            </div>
+          </Link>
         </div>
-      </div>
-      <div className="bg-gray-900 w-full h-32 place-self-center">
-        <footer className="p-14 mt-24 text-center text-gray-500">
-          &copy; 2022#VANLIFE
-        </footer>
       </div>
     </div>
   );
